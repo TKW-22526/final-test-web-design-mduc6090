@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi — PhoneVN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap" style="padding:16px 0;">
+    <div class="brand">Phone<span>VN</span></div>
+    <div class="nav-links">
+      <a href="../index.html">Trang chủ</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="gioi-thieu.html">Về chúng tôi</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </div>
+    <div class="nav-actions">
+      <button id="cart-btn" onclick="toggleCart(true)">
+        🛒 Giỏ hàng <span id="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="eyebrow">Câu chuyện của chúng tôi</div>
+  <h1>Về PhoneVN</h1>
+  <p>Chúng tôi mang điện thoại chính hãng đến tay người dùng với mức giá hợp lý và dịch vụ tận tâm.</p>
+</div>
+
+<div class="about-wrap">
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="num">8+</div>
+      <div class="label">Mẫu điện thoại đang bán</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">12 tháng</div>
+      <div class="label">Bảo hành chính hãng</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">2 giờ</div>
+      <div class="label">Giao hàng nội thành</div>
+    </div>
+  </div>
+
+  <h2>Chúng tôi là ai</h2>
+  <p>PhoneVN là cửa hàng chuyên cung cấp điện thoại chính hãng từ các thương hiệu lớn như Apple, Samsung và Xiaomi. Mỗi sản phẩm đều được kiểm tra kỹ trước khi đến tay khách hàng.</p>
+  <p>Với đội ngũ am hiểu công nghệ, chúng tôi luôn sẵn sàng tư vấn để bạn chọn được chiếc điện thoại phù hợp nhất với nhu cầu và ngân sách của mình.</p>
+
+  <h2>Cam kết của chúng tôi</h2>
+  <p>Sản phẩm chính hãng 100%, đầy đủ hóa đơn và bảo hành. Giá niêm yết rõ ràng, không phát sinh chi phí ẩn. Hỗ trợ đổi trả trong 7 ngày nếu sản phẩm lỗi do nhà sản xuất.</p>
+
+  <h2>Lưu ý</h2>
+  <p>Đây là trang demo phục vụ mục đích học tập/thử nghiệm — thông tin cửa hàng, chính sách có thể chỉnh sửa lại theo nhu cầu thực tế.</p>
+</div>
+
+<div class="footer-col">
+      <h4>Điều hướng</h4>
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="san-pham.html">Sản phẩm</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Danh mục</h4>
+      <ul>
+        <li><a href="san-pham.html">iPhone</a></li>
+        <li><a href="san-pham.html">Samsung</a></li>
+        <li><a href="san-pham.html">Xiaomi</a></li>
+      </ul>
+    </div>
+
+<div class="overlay" id="overlay" onclick="toggleCart(false)"></div>
+<div class="drawer" id="cart-drawer">
+  <div class="drawer-head">
+    <h3>Giỏ hàng</h3>
+    <button class="close-btn" onclick="toggleCart(false)">✕</button>
+  </div>
+  <div class="drawer-items" id="drawer-items"></div>
+  <div class="drawer-foot">
+    <div class="total-row">
+      <span>Tổng cộng</span>
+      <span id="cart-total">0₫</span>
+    </div>
+    <button class="btn-primary" style="width:100%;" onclick="checkout()">Thanh toán</button>
+  </div>
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

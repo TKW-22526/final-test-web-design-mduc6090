@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneVN — Điện thoại chính hãng, giá tốt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap" style="padding:16px 0;">
+    <div class="brand">Phone<span>VN</span></div>
+    <div class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="html/san-pham.html">Sản phẩm</a>
+      <a href="html/gioi-thieu.html">Về chúng tôi</a>
+      <a href="html/lien-he.html">Liên hệ</a>
+    </div>
+    <div class="nav-actions">
+      <button id="cart-btn" onclick="toggleCart(true)">
+        🛒 Giỏ hàng <span id="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Chính hãng · Bảo hành 12 tháng</div>
+      <h1>Điện thoại <em>chính hãng</em>,<br>giá luôn tốt nhất.</h1>
+      <p>Chọn từ hàng chục mẫu iPhone, Samsung, Xiaomi mới nhất — giao nhanh trong 2 giờ tại nội thành.</p>
+      <a href="html/san-pham.html" class="btn-primary">Xem sản phẩm →</a>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-frame"></div>
+      <div class="caption">Ưu đãi mới mỗi tuần</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-title" id="products">
+  <h2>Sản phẩm nổi bật</h2>
+  <span></span>
+</div>
+<div class="grid" id="featured-grid"></div>
+<div class="featured-cta">
+  <a href="html/san-pham.html">Xem tất cả sản phẩm →</a>
+</div>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand">Phone<span>VN</span></div>
+      <p>Điện thoại chính hãng, giá tốt — giao nhanh trong 2 giờ tại nội thành.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="TikTok">tt</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Điều hướng</h4>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="html/gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="html/san-pham.html">Sản phẩm</a></li>
+        <li><a href="html/lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Danh mục</h4>
+      <ul>
+        <li><a href="html/san-pham.html">iPhone</a></li>
+        <li><a href="html/san-pham.html">Samsung</a></li>
+        <li><a href="html/san-pham.html">Xiaomi</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Liên hệ</h4>
+      <ul>
+        <li><span>0900 000 000</span></li>
+        <li><span>hello@phonevn.vn</span></li>
+        <li><span>Q.1, TP. Hồ Chí Minh</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 PhoneVN</span>
+    <span class="footer-bottom-links">
+      <a href="#">Chính sách bảo hành</a>
+      <a href="#">Chính sách đổi trả</a>
+    </span>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" onclick="toggleCart(false)"></div>
+<div class="drawer" id="cart-drawer">
+  <div class="drawer-head">
+    <h3>Giỏ hàng</h3>
+    <button class="close-btn" onclick="toggleCart(false)">✕</button>
+  </div>
+  <div class="drawer-items" id="drawer-items"></div>
+  <div class="drawer-foot">
+    <div class="total-row">
+      <span>Tổng cộng</span>
+      <span id="cart-total">0₫</span>
+    </div>
+    <button class="btn-primary" style="width:100%;" onclick="checkout()">Thanh toán</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

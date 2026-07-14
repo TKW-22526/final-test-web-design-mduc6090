@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm — PhoneVN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap" style="padding:16px 0;">
+    <div class="brand">Phone<span>VN</span></div>
+    <div class="nav-links">
+      <a href="../index.html">Trang chủ</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="gioi-thieu.html">Về chúng tôi</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </div>
+    <div class="nav-actions">
+      <button id="cart-btn" onclick="toggleCart(true)">
+        🛒 Giỏ hàng <span id="cart-count">0</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="eyebrow">Toàn bộ sản phẩm</div>
+  <h1>Tất cả điện thoại đang bán</h1>
+  <p>Lọc theo hãng để tìm nhanh chiếc điện thoại phù hợp với bạn.</p>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<div class="section-title">
+  <h2>Danh sách sản phẩm</h2>
+  <span id="result-count"></span>
+</div>
+<div class="grid" id="product-grid"></div>
+
+<div class="footer-col">
+      <h4>Điều hướng</h4>
+      <ul>
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+        <li><a href="san-pham.html">Sản phẩm</a></li>
+        <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Danh mục</h4>
+      <ul>
+        <li><a href="san-pham.html">iPhone</a></li>
+        <li><a href="san-pham.html">Samsung</a></li>
+        <li><a href="san-pham.html">Xiaomi</a></li>
+      </ul>
+    </div>
+
+<div class="overlay" id="overlay" onclick="toggleCart(false)"></div>
+<div class="drawer" id="cart-drawer">
+  <div class="drawer-head">
+    <h3>Giỏ hàng</h3>
+    <button class="close-btn" onclick="toggleCart(false)">✕</button>
+  </div>
+  <div class="drawer-items" id="drawer-items"></div>
+  <div class="drawer-foot">
+    <div class="total-row">
+      <span>Tổng cộng</span>
+      <span id="cart-total">0₫</span>
+    </div>
+    <button class="btn-primary" style="width:100%;" onclick="checkout()">Thanh toán</button>
+  </div>
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
