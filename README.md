@@ -175,10 +175,10 @@ Sinh viên cần nộp đầy đủ các nội dung sau:
 Sinh viên cập nhật thông tin cá nhân tại đây:
 
 ```text
-Họ và tên:
-Mã số sinh viên:
-Lớp:
-Tên đề tài:
-Liên kết GitHub repository:
+Họ và tên: Nguyễn Minh Đức
+Mã số sinh viên: 110125222
+Lớp: DA25TTA 
+Tên đề tài: Xây dựng website bán điện thoại di động
+Liên kết GitHub repository: https://github.com/TKW-22526/final-test-web-design-mduc6090.git
 Liên kết GitHub Pages:
 ```
