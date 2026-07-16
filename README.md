@@ -180,5 +180,5 @@ Mã số sinh viên: 110125222
 Lớp: DA25TTA 
 Tên đề tài: Xây dựng website bán điện thoại di động
 Liên kết GitHub repository: https://github.com/TKW-22526/final-test-web-design-mduc6090.git
-Liên kết GitHub Pages:
+Liên kết GitHub Pages: https://tkw-22526.github.io/final-test-web-design-mduc6090/
 ```
